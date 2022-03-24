@@ -1,0 +1,99 @@
+.jumbotron{
+    max-width: 100%;
+    min-height: auto;
+    background-image: url(orange.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 8px 16px -6px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+.container .head{
+      display:flex;
+  }
+
+  .banner{
+    background-image: url(orange.jpg);
+    background-size: cover;
+    margin:15px;
+    border-radius:7px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 40px;
+    box-shadow: 0 10px 16px -8px rgb(5, 5, 5);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow:hidden;
+  }
+
+
+  .content{
+      margin:1.5rem;
+      color: black;    
+      margin:15px;    
+  }
+
+.info{
+    margin:5px;
+    margin-top: 2rem;
+
+}
+
+.well{
+    box-shadow: 0 8px 16px -6px rgb(10, 10, 10);
+    padding: 10px;
+    border-radius:7px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+.panel-primary{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius:7px;
+}
+
+.panel-heading{
+    box-shadow: 0 8px 16px -6px rgb(8, 8, 8);
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding:10px;
+    display:flex;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.panel-primary .panel-body{
+    box-shadow: 0 8px 16px -6px rgb(8, 8, 8);
+    padding: 10px;
+    font: size 1rem;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.panel-body{
+    font-size: .8rem;
+}
+
+#row1{
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 16px -6px rgb(8, 8, 8);
+    width: 100%;
+    border-radius:7px;
+    background-color: rgb(255, 255, 255);
+}
+
+#row2{
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 16px -6px rgb(8, 8, 8);
+    border-radius:7px;
+    background-color: rgb(255, 255, 255);
+}

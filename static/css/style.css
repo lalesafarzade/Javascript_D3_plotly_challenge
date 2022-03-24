@@ -87,3 +87,20 @@
     border-radius:7px;
     background-color: rgb(255, 255, 255);
 }
+
+/* footer */
+
+#footer{
+    margin-top: 2.5rem 1rem;
+    text-align: center;
+    color: #FDCEB9;
+  }
+  .social-icon {
+    color: #FDCEB9;
+    border-color: black;
+    margin:0 .5rem; 
+  }
+  
+  .social-icon:hover,#footer:hover,#nav-brand:hover,#nav-text:hover,.t-Data:hover {
+    color: #ec4c01;
+  }

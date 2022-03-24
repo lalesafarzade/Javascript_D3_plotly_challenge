@@ -1,55 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bellybutton Biodiversity</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+  
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link rel="icon" href="favicon.ico">
 <body>
+    <div>
+        <div class="container head">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner">
+                        <div class="content">
+                            <h1>Belly Button Biodiversity Dashboard</h1>
+                            <p>Use the interactive charts below to explore the dataset</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class="row info">
+                <div class="col-lg-3 col-sm-12">
+                    <div class="well">
+                        <h5>Test Subject ID No.:</h5>
+                        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h5 class="panel-title" style="text-align: center;">Demographic Info</h5>
+                        </div>
+                        <div id="sample-metadata" class="panel-body"></div>
+                    </div> 
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                </div>
+                <div class="col-lg-9 col-sm-12" id="row1"><br><br>
+                    <div id="bubble"></div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
+        <div class="container px-6">
+            <div class="row gx-5 info">
+                <div class="col-lg-6 col-sm-12" id="row2">
+                    <div id="bar"></div>
+                </div>
+                <div class="col-lg-6 col-sm-12" id="row2">
+                    <div id="gauge"></div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-5">
-        <div id="bar"></div>
-      </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
-      </div>
+
+        <!--<div class="container">
+            <div class="row info"> 
+                <div class="col-lg-6 col-sm-12" id="row2">
+                    <div id="bar"></div>
+                </div>
+                <div class="col-lg-6 col-sm-12 float-end" id="row2">
+                    <div id="gauge"></div>
+                </div>
+
+            </div>    
+        </div>-->
+
+        
+
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="bar"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="gauge"></div>
+                    </div>
+                </div>
+            </div> -->
+        
+        
+
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
-      </div>
-    </div>
-  </div>
+    
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="./static/js/app.js"></script>
-  <script src="./static/js/bonus.js"></script>
-  
-</body>
+  <script src="static/js/app.js"></script>
+  <script src="static/js/bonus.js"></script>
 
+
+</body>
 </html>

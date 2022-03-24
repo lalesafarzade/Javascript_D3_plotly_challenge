@@ -155,7 +155,7 @@ function Gauge_building(sample){
           
           var layout = {
             
-            margin: { t: 55, r: 35, l: 35, b: 25 },
+            margin: { t: 55, r: 25, l: 25, b: 25 },
         
             
           };

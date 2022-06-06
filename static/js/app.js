@@ -175,7 +175,7 @@ function initialize(){
     var select=d3.select("#selDataset");
     d3.json("data/samples.json").then(function(data) {
         let sample_names=data.names;
-        //console.log(sample_names)
+        console.log(sample_names)
 
         //making options for samples
         sample_names.forEach(function(sample) {

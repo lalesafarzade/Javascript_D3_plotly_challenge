@@ -69,6 +69,11 @@
     
 }
 
+#body{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .panel-body{
     font-size: .8rem;
 }
